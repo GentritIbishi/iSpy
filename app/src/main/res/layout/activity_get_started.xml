@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".GetStartedActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/ic_top"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_logo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_1"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/bt_getStarted"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_get_started"
+            android:text="@string/get_started"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_2"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/ic_bottom"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+    </LinearLayout>
+
+</LinearLayout>

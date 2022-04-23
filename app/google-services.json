@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "404217626784",
+    "project_id": "ispy-ap",
+    "storage_bucket": "ispy-ap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404217626784:android:d991abb117ca3a46be49c5",
+        "android_client_info": {
+          "package_name": "com.gentritibishi.ispy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404217626784-q0fm2tsv34h42lmio7qf346206odgh28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKHRaC7n71w36GbbnjhmrJb9Taog3oMlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404217626784-q0fm2tsv34h42lmio7qf346206odgh28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

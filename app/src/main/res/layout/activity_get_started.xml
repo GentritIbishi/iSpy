@@ -7,6 +7,7 @@
     tools:context=".GetStartedActivity">
 
     <RelativeLayout
+        android:id="@+id/RelativeTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#15479e"
@@ -16,8 +17,8 @@
             android:id="@+id/logoImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_logo"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_logo" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -30,23 +31,74 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Monitoring |"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/screen_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Screen Time"
                 android:layout_toRightOf="@+id/monitoring"
-                android:textColor="@color/white"/>
+                android:text=" Screen Time"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" | Web filtering"
                 android:layout_toRightOf="@+id/screen_time"
-                android:textColor="@color/white"/>
+                android:text=" | Web filtering"
+                android:textColor="@color/white" />
         </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeElse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeTop"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_intro1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_getStarted"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_intro1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bt_get_started"
+            android:text="@string/get_started"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_intro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_getStarted"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/intro_2"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/RelativeElse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bottom"/>
 
     </RelativeLayout>
 

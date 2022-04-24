@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,8 @@ public class LoginActivity extends AppCompatActivity {
         ch_remember = findViewById(R.id.ch_remember);
         bt_signIn = findViewById(R.id.bt_signIn);
         bt_createNewAccount = findViewById(R.id.bt_createNewAccount);
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
 
         SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
         String checkbox = preferences.getString("remember", "");
@@ -42,9 +45,13 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Allow2 allow2 = Allow2.getShared();
-                allow2.env = Allow2EnvType.SANDBOX;
                 String deviceName = Settings.Global.getString(getContentResolver(), Settings.Global.DEVICE_NAME);
-                allow2.pair(et_usernameEmailPhone.getText().toString(), et_password.getText().toString(), deviceName);
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        allow2.pairInMyWay(et_usernameEmailPhone.getText().toString(), et_password.getText().toString(), deviceName);
+                    }
+                });
 
 //                Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
 //                startActivity(intent);

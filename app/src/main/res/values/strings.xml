@@ -1,6 +1,13 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">iSpy</string>
     <string name="intro_1">We help families and educators secure mobile devices, making them safer for the children they love.</string>
     <string name="intro_2">Promote Security • Build Trust Provide Independence</string>
     <string name="get_started">Get Started</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="not_have_account">Don\'t have an account?</string>
+    <string name="login_or_sign_up">Login or Sign Up</string>
+    <string name="username_email_or_phone" >Username or email or phone</string>
+    <string name="password">Password</string>
+    <string name="sign_me_in">Sign me in</string>
+    <string name="remember">Remember</string>
 </resources>

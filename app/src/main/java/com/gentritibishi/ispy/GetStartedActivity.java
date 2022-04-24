@@ -3,6 +3,7 @@ package com.gentritibishi.ispy;
 import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -25,6 +26,8 @@ public class GetStartedActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Goes to login
+             Intent intent = new Intent(GetStartedActivity.this, LoginActivity.class);
+             startActivity(intent);
             }
         });
 

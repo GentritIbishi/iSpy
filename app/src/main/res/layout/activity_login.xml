@@ -78,6 +78,8 @@
             android:layout_below="@+id/tv_loginSignUP"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:focusableInTouchMode="true"
             android:background="@drawable/et_login_default"
             android:hint="@string/username_email_or_phone"
             android:textColorHint="@color/white" />
@@ -86,12 +88,14 @@
             android:id="@+id/et_password"
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:textColor="@color/white"
+            android:inputType="textPassword"
             android:layout_below="@+id/et_usernameEmailPhone"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
+            android:focusableInTouchMode="true"
             android:background="@drawable/et_login_default"
             android:hint="@string/password"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <CheckBox

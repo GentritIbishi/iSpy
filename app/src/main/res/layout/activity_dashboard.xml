@@ -19,11 +19,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome"
+            android:text="Choose a child"
             android:fontFamily="sans-serif"
             android:textColor="@color/white"
             android:textAlignment="center"
             android:textSize="20sp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvChildren"></ListView>
 
         <Button
             android:id="@+id/bt_logout"

@@ -13,6 +13,8 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 
+import com.google.android.gms.common.data.DataHolder;
+
 public class LoginActivity extends AppCompatActivity {
 
     EditText et_usernameEmailPhone, et_password;
@@ -49,7 +51,10 @@ public class LoginActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        allow2.pairInMyWay(et_usernameEmailPhone.getText().toString(), et_password.getText().toString(), deviceName);
+                        String jsonObj = allow2.pairInMyWay(et_usernameEmailPhone.getText().toString(), et_password.getText().toString(), deviceName);
+                        Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+                        intent.putExtra("jsonObj",jsonObj);
+                        startActivity(intent);
                     }
                 });
 

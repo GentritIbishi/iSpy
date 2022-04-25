@@ -76,8 +76,9 @@ public class Allow2 {
      * @return the value (int)
      */
 
-    void pairInMyWay(String user, String password, String deviceName) {
+    String pairInMyWay(String user, String password, String deviceName) {
 
+        String jsonData = null;
         OkHttpClient client = new OkHttpClient();
         try {
             String deviceToken = "z0BvvGEv53zdWGtU";
@@ -106,7 +107,7 @@ public class Allow2 {
 
             if ((responseCode = responses.code()) == 200) {
                 // Get response
-                String jsonData = responses.body().string();
+                jsonData = responses.body().string();
 
                 // Transform reponse to JSon Object
                 JSONObject jsonObject = new JSONObject(jsonData);
@@ -119,9 +120,9 @@ public class Allow2 {
                 JSONArray children = jsonObject.getJSONArray("children");
                 //get childrens
 
-
             } else {
                 System.out.println("Error!");
+                jsonData = null;
             }
 
         } catch (IOException e) {
@@ -129,6 +130,11 @@ public class Allow2 {
         } catch (JSONException e) {
             responseString = e.toString();
         }
+        return jsonData;
+    }
+
+    void checkingLoggingUsuage(String userId, Integer pairId ) {
+        //to be
     }
 
 

@@ -7,9 +7,11 @@
         <entry key="..\:/Users/gentr/StudioProjects/iSpy/app/src/main/res/drawable/bt_get_started.xml" value="0.1735" />
         <entry key="..\:/Users/gentr/StudioProjects/iSpy/app/src/main/res/drawable/bt_sign_me_in.xml" value="0.1735" />
         <entry key="..\:/Users/gentr/StudioProjects/iSpy/app/src/main/res/drawable/et_login_default.xml" value="0.1735" />
+        <entry key="..\:/Users/gentr/StudioProjects/iSpy/app/src/main/res/layout/activity_children.xml" value="0.25" />
         <entry key="..\:/Users/gentr/StudioProjects/iSpy/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/gentr/StudioProjects/iSpy/app/src/main/res/layout/activity_get_started.xml" value="0.264" />
         <entry key="..\:/Users/gentr/StudioProjects/iSpy/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/gentr/StudioProjects/iSpy/app/src/main/res/layout/children_item_single.xml" value="0.264" />
       </map>
     </option>
   </component>
